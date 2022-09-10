@@ -6,6 +6,8 @@ const menu = document.querySelectorAll('.nav-item');
 
 let base = location.origin;
 
+console.log(base)
+
 menu.forEach( (item, index) => {
   item.addEventListener('click', (e) => {
     if (index === 0) {
