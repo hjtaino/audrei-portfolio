@@ -5,8 +5,7 @@ const menu = document.querySelectorAll('.nav-item');
 // const closeBtn = document.querySelector('.close-btn');
 
 let base = location.origin;
-
-console.log(base)
+let github = 'audrei-portfolio';
 
 menu.forEach( (item, index) => {
   item.addEventListener('click', (e) => {
@@ -14,16 +13,16 @@ menu.forEach( (item, index) => {
       location.href = base;
     }
     else if (index === 1) {
-      location.href = `${base}/about.html`;
+      location.href = `${base}/${github}/about.html`;
     }
     else if (index === 2) {
-      location.href = `${base}/portfolio.html`;
+      location.href = `${base}/${github}/portfolio.html`;
     }
     else if (index === 3) {
-      location.href = `${base}/resume.html`;
+      location.href = `${base}/${github}/resume.html`;
     }
     else if (index === 4) {
-      location.href = `${base}/contact.html`;
+      location.href = `${base}/${github}/contact.html`;
     }
   });
 });
