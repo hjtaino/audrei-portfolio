@@ -10,7 +10,7 @@ let github = 'audrei-portfolio';
 menu.forEach( (item, index) => {
   item.addEventListener('click', (e) => {
     if (index === 0) {
-      location.href = base;
+      location.href = `${base}/${github}/index.html`;
     }
     else if (index === 1) {
       location.href = `${base}/${github}/about.html`;
